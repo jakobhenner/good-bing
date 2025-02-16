@@ -8,7 +8,7 @@
   --base-font-size: calc(max(1px, 1 / 1728 * 100vw) * 16);
   font-size: var(--base-font-size);
   line-height: 1.2;
-  font-weight: bold;
+  font-weight: 500;
   letter-spacing: -0.01em;
 }
 

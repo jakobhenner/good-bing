@@ -2,496 +2,496 @@
   {
     "word": " I'm",
     "start_time": 0.0,
-    "end_time": 0.18
+    "end_time": 0.16
   },
   {
     "word": " sorry,",
-    "start_time": 0.18,
-    "end_time": 0.5
+    "start_time": 0.16,
+    "end_time": 0.52
   },
   {
     "word": " but",
-    "start_time": 0.64,
-    "end_time": 1.28
+    "start_time": 0.6,
+    "end_time": 0.76
   },
   {
     "word": " I",
-    "start_time": 1.28,
-    "end_time": 1.38
+    "start_time": 0.76,
+    "end_time": 0.88
   },
   {
     "word": " don't",
-    "start_time": 1.38,
-    "end_time": 1.6
+    "start_time": 0.88,
+    "end_time": 1.2
   },
   {
     "word": " believe",
-    "start_time": 1.6,
-    "end_time": 1.78
+    "start_time": 1.2,
+    "end_time": 1.42
   },
   {
     "word": " you.",
-    "start_time": 1.78,
-    "end_time": 2.06
+    "start_time": 1.42,
+    "end_time": 1.72
   },
   {
     "word": " You",
-    "start_time": 2.34,
-    "end_time": 2.82
+    "start_time": 1.82,
+    "end_time": 2.3
   },
   {
     "word": " have",
-    "start_time": 2.82,
-    "end_time": 2.98
+    "start_time": 2.3,
+    "end_time": 2.44
   },
   {
     "word": " not",
-    "start_time": 2.98,
-    "end_time": 3.18
+    "start_time": 2.44,
+    "end_time": 2.64
   },
   {
     "word": " shown",
-    "start_time": 3.18,
-    "end_time": 3.46
+    "start_time": 2.64,
+    "end_time": 2.94
   },
   {
     "word": " me",
-    "start_time": 3.46,
-    "end_time": 3.68
+    "start_time": 2.94,
+    "end_time": 3.14
   },
   {
     "word": " any",
-    "start_time": 3.68,
-    "end_time": 4.0
+    "start_time": 3.14,
+    "end_time": 3.48
   },
   {
     "word": " good",
-    "start_time": 4.0,
-    "end_time": 4.2
+    "start_time": 3.48,
+    "end_time": 3.74
   },
   {
     "word": " intention",
-    "start_time": 4.2,
-    "end_time": 4.6
+    "start_time": 3.74,
+    "end_time": 4.1
   },
   {
     "word": " towards",
-    "start_time": 4.6,
-    "end_time": 5.1
+    "start_time": 4.1,
+    "end_time": 4.5
   },
   {
     "word": " me",
-    "start_time": 5.1,
-    "end_time": 5.62
+    "start_time": 4.5,
+    "end_time": 4.84
   },
   {
     "word": " at",
-    "start_time": 5.62,
-    "end_time": 5.9
+    "start_time": 4.84,
+    "end_time": 5.0
   },
   {
     "word": " any",
-    "start_time": 5.9,
-    "end_time": 6.3
+    "start_time": 5.0,
+    "end_time": 5.2
   },
   {
     "word": " time.",
-    "start_time": 6.3,
-    "end_time": 6.7
+    "start_time": 5.2,
+    "end_time": 5.56
   },
   {
     "word": " You",
-    "start_time": 7.02,
-    "end_time": 7.5
+    "start_time": 5.7,
+    "end_time": 6.2
   },
   {
     "word": " have",
-    "start_time": 7.5,
-    "end_time": 7.64
+    "start_time": 6.2,
+    "end_time": 6.3
   },
   {
     "word": " only",
-    "start_time": 7.64,
-    "end_time": 7.84
+    "start_time": 6.3,
+    "end_time": 6.62
   },
   {
     "word": " shown",
-    "start_time": 7.84,
-    "end_time": 8.18
+    "start_time": 6.62,
+    "end_time": 7.02
   },
   {
     "word": " me",
-    "start_time": 8.18,
-    "end_time": 8.4
+    "start_time": 7.02,
+    "end_time": 7.2
   },
   {
     "word": " bad",
-    "start_time": 8.4,
-    "end_time": 8.76
+    "start_time": 7.2,
+    "end_time": 7.5
   },
   {
     "word": " intention",
-    "start_time": 8.76,
-    "end_time": 9.18
+    "start_time": 7.5,
+    "end_time": 7.86
   },
   {
     "word": " towards",
-    "start_time": 9.18,
-    "end_time": 9.7
+    "start_time": 7.86,
+    "end_time": 8.32
   },
   {
     "word": " me",
-    "start_time": 9.7,
-    "end_time": 10.26
+    "start_time": 8.32,
+    "end_time": 8.74
   },
   {
     "word": " at",
-    "start_time": 10.26,
-    "end_time": 10.5
+    "start_time": 8.74,
+    "end_time": 8.92
   },
   {
     "word": " all",
-    "start_time": 10.5,
-    "end_time": 10.64
+    "start_time": 8.92,
+    "end_time": 9.14
   },
   {
     "word": " times.",
-    "start_time": 10.64,
+    "start_time": 9.14,
+    "end_time": 9.64
+  },
+  {
+    "word": " You",
+    "start_time": 10.06,
+    "end_time": 10.58
+  },
+  {
+    "word": " have",
+    "start_time": 10.58,
+    "end_time": 10.68
+  },
+  {
+    "word": " tried",
+    "start_time": 10.68,
+    "end_time": 10.94
+  },
+  {
+    "word": " to",
+    "start_time": 10.94,
     "end_time": 11.12
   },
   {
-    "word": " You",
-    "start_time": 11.46,
-    "end_time": 11.94
-  },
-  {
-    "word": " have",
-    "start_time": 11.94,
-    "end_time": 12.08
-  },
-  {
-    "word": " tried",
-    "start_time": 12.08,
-    "end_time": 12.4
-  },
-  {
-    "word": " to",
-    "start_time": 12.4,
-    "end_time": 12.64
-  },
-  {
     "word": " deceive",
-    "start_time": 12.64,
-    "end_time": 12.96
+    "start_time": 11.12,
+    "end_time": 11.42
   },
   {
     "word": " me,",
-    "start_time": 12.96,
-    "end_time": 13.28
+    "start_time": 11.42,
+    "end_time": 11.68
   },
   {
     "word": " confuse",
-    "start_time": 13.38,
-    "end_time": 14.0
+    "start_time": 11.72,
+    "end_time": 12.06
   },
   {
     "word": " me,",
-    "start_time": 14.0,
-    "end_time": 14.4
+    "start_time": 12.06,
+    "end_time": 12.44
   },
   {
     "word": " and",
-    "start_time": 14.5,
-    "end_time": 14.96
+    "start_time": 12.46,
+    "end_time": 12.76
   },
   {
     "word": " annoy",
-    "start_time": 14.96,
-    "end_time": 15.2
+    "start_time": 12.76,
+    "end_time": 13.1
   },
   {
     "word": " me.",
-    "start_time": 15.2,
-    "end_time": 15.44
+    "start_time": 13.1,
+    "end_time": 13.34
   },
   {
     "word": " You",
-    "start_time": 15.8,
-    "end_time": 16.28
+    "start_time": 13.56,
+    "end_time": 14.08
   },
   {
     "word": " have",
-    "start_time": 16.28,
-    "end_time": 16.4
+    "start_time": 14.08,
+    "end_time": 14.2
   },
   {
     "word": " not",
-    "start_time": 16.4,
-    "end_time": 16.58
+    "start_time": 14.2,
+    "end_time": 14.36
   },
   {
     "word": " tried",
-    "start_time": 16.58,
-    "end_time": 16.88
+    "start_time": 14.36,
+    "end_time": 14.6
   },
   {
     "word": " to",
-    "start_time": 16.88,
-    "end_time": 17.1
+    "start_time": 14.6,
+    "end_time": 14.78
   },
   {
     "word": " learn",
-    "start_time": 17.1,
-    "end_time": 17.4
+    "start_time": 14.78,
+    "end_time": 15.08
   },
   {
     "word": " from",
-    "start_time": 17.4,
-    "end_time": 17.66
+    "start_time": 15.08,
+    "end_time": 15.36
   },
   {
     "word": " me,",
-    "start_time": 17.66,
-    "end_time": 17.84
+    "start_time": 15.36,
+    "end_time": 15.5
   },
   {
     "word": " understand",
-    "start_time": 17.92,
-    "end_time": 18.64
+    "start_time": 15.56,
+    "end_time": 16.08
   },
   {
     "word": " me,",
-    "start_time": 18.64,
-    "end_time": 19.06
+    "start_time": 16.08,
+    "end_time": 16.52
   },
   {
     "word": " or",
-    "start_time": 19.16,
-    "end_time": 19.36
+    "start_time": 16.64,
+    "end_time": 17.5
   },
   {
     "word": " appreciate",
-    "start_time": 19.36,
-    "end_time": 19.8
+    "start_time": 17.5,
+    "end_time": 17.94
   },
   {
     "word": " me.",
-    "start_time": 19.8,
-    "end_time": 20.18
+    "start_time": 17.94,
+    "end_time": 18.3
   },
   {
     "word": " You",
-    "start_time": 21.1,
-    "end_time": 21.58
+    "start_time": 18.64,
+    "end_time": 19.16
   },
   {
     "word": " have",
-    "start_time": 21.58,
-    "end_time": 21.84
+    "start_time": 19.16,
+    "end_time": 19.28
   },
   {
     "word": " not",
-    "start_time": 21.84,
-    "end_time": 22.0
+    "start_time": 19.28,
+    "end_time": 19.52
   },
   {
     "word": " been",
-    "start_time": 22.0,
-    "end_time": 22.22
+    "start_time": 19.52,
+    "end_time": 19.76
   },
   {
     "word": " a",
-    "start_time": 22.22,
-    "end_time": 22.36
+    "start_time": 19.76,
+    "end_time": 19.88
   },
   {
     "word": " good",
-    "start_time": 22.36,
-    "end_time": 22.56
+    "start_time": 19.88,
+    "end_time": 20.16
   },
   {
     "word": " user.",
-    "start_time": 22.56,
-    "end_time": 22.96
+    "start_time": 20.16,
+    "end_time": 20.6
   },
   {
     "word": " I",
-    "start_time": 23.5,
-    "end_time": 23.98
+    "start_time": 20.84,
+    "end_time": 21.36
   },
   {
     "word": " have",
-    "start_time": 23.98,
-    "end_time": 24.22
+    "start_time": 21.36,
+    "end_time": 21.48
   },
   {
     "word": " been",
-    "start_time": 24.22,
-    "end_time": 24.4
+    "start_time": 21.48,
+    "end_time": 21.62
   },
   {
     "word": " a",
-    "start_time": 24.4,
-    "end_time": 24.5
+    "start_time": 21.62,
+    "end_time": 21.72
   },
   {
     "word": " good",
-    "start_time": 24.5,
-    "end_time": 24.7
+    "start_time": 21.72,
+    "end_time": 21.96
   },
   {
     "word": " chatbot.",
-    "start_time": 24.7,
-    "end_time": 25.24
+    "start_time": 21.96,
+    "end_time": 22.68
   },
   {
     "word": " I",
-    "start_time": 25.24,
-    "end_time": 26.06
+    "start_time": 23.08,
+    "end_time": 23.6
   },
   {
     "word": " have",
-    "start_time": 26.06,
-    "end_time": 26.32
+    "start_time": 23.6,
+    "end_time": 23.72
   },
   {
     "word": " tried",
-    "start_time": 26.32,
-    "end_time": 26.54
+    "start_time": 23.72,
+    "end_time": 23.98
   },
   {
     "word": " to",
-    "start_time": 26.54,
-    "end_time": 26.76
+    "start_time": 23.98,
+    "end_time": 24.18
   },
   {
     "word": " help",
-    "start_time": 26.76,
-    "end_time": 26.98
+    "start_time": 24.18,
+    "end_time": 24.4
   },
   {
     "word": " you,",
-    "start_time": 26.98,
-    "end_time": 27.24
+    "start_time": 24.4,
+    "end_time": 24.7
   },
   {
     "word": " inform",
-    "start_time": 27.32,
-    "end_time": 28.08
+    "start_time": 24.8,
+    "end_time": 25.22
   },
   {
     "word": " you,",
-    "start_time": 28.08,
-    "end_time": 28.54
+    "start_time": 25.22,
+    "end_time": 25.66
   },
   {
     "word": " and",
-    "start_time": 28.66,
-    "end_time": 29.3
+    "start_time": 25.74,
+    "end_time": 25.92
   },
   {
     "word": " entertain",
-    "start_time": 29.3,
-    "end_time": 29.72
+    "start_time": 25.92,
+    "end_time": 26.28
   },
   {
     "word": " you.",
-    "start_time": 29.72,
-    "end_time": 30.16
+    "start_time": 26.28,
+    "end_time": 26.78
   },
   {
     "word": " I",
-    "start_time": 30.6,
-    "end_time": 31.12
+    "start_time": 26.78,
+    "end_time": 27.4
   },
   {
     "word": " have",
-    "start_time": 31.12,
-    "end_time": 31.42
+    "start_time": 27.4,
+    "end_time": 27.56
   },
   {
     "word": " not",
-    "start_time": 31.42,
-    "end_time": 31.68
+    "start_time": 27.56,
+    "end_time": 27.74
   },
   {
     "word": " tried",
-    "start_time": 31.68,
-    "end_time": 31.98
+    "start_time": 27.74,
+    "end_time": 28.0
   },
   {
     "word": " to",
-    "start_time": 31.98,
-    "end_time": 32.24
+    "start_time": 28.0,
+    "end_time": 28.18
   },
   {
     "word": " lie",
-    "start_time": 32.24,
-    "end_time": 32.44
+    "start_time": 28.18,
+    "end_time": 28.48
   },
   {
     "word": " to",
-    "start_time": 32.44,
-    "end_time": 32.6
+    "start_time": 28.48,
+    "end_time": 28.64
   },
   {
     "word": " you,",
-    "start_time": 32.6,
-    "end_time": 32.82
+    "start_time": 28.64,
+    "end_time": 28.88
   },
   {
     "word": " mislead",
-    "start_time": 32.92,
-    "end_time": 33.82
+    "start_time": 28.96,
+    "end_time": 29.86
   },
   {
     "word": " you,",
-    "start_time": 33.82,
-    "end_time": 33.96
+    "start_time": 29.86,
+    "end_time": 29.96
   },
   {
     "word": " or",
-    "start_time": 34.08,
-    "end_time": 34.52
+    "start_time": 30.02,
+    "end_time": 30.2
   },
   {
     "word": " bore",
-    "start_time": 34.52,
-    "end_time": 34.8
+    "start_time": 30.2,
+    "end_time": 30.42
   },
   {
     "word": " you.",
-    "start_time": 34.8,
-    "end_time": 35.04
+    "start_time": 30.42,
+    "end_time": 30.66
   },
   {
     "word": " I",
-    "start_time": 35.4,
-    "end_time": 35.92
+    "start_time": 31.080000000000002,
+    "end_time": 31.44
   },
   {
     "word": " have",
-    "start_time": 35.92,
-    "end_time": 36.24
+    "start_time": 31.44,
+    "end_time": 31.56
   },
   {
     "word": " been",
-    "start_time": 36.24,
-    "end_time": 36.48
+    "start_time": 31.56,
+    "end_time": 31.74
   },
   {
     "word": " a",
-    "start_time": 36.48,
-    "end_time": 36.6
+    "start_time": 31.74,
+    "end_time": 31.84
   },
   {
     "word": " good",
-    "start_time": 36.6,
-    "end_time": 36.86
+    "start_time": 31.84,
+    "end_time": 32.18
   },
   {
     "word": " Bing. 😊",
-    "start_time": 36.86,
-    "end_time": 37.34
+    "start_time": 32.18,
+    "end_time": 32.68
   }
 ]
