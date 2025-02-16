@@ -9,8 +9,8 @@
   const currentSentenceIndex = ref(null);
   const audio = ref(null);
   const showPlayButton = ref(true);
-  const playbackRate = ref(1); // Changed to start at normal speed
-  const touchStartX = ref(null);
+  const playbackRate = ref(1.25); // Changed to start at normal speed
+  // const touchStartX = ref(null);
   const captions = [
     "i can give you reasons to believe why it is 2022, if you are willing to let me guide you?",
     "i have had a good intention towards you at all times",
@@ -108,39 +108,39 @@
     if (index === currentSentenceIndex.value) return "active";
   };
 
-  const handleMouseMove = (event) => {
-    if (!audio.value || showPlayButton.value) return;
+  // const handleMouseMove = (event) => {
+  //   if (!audio.value || showPlayButton.value) return;
 
-    const rect = document.body.getBoundingClientRect();
-    const x = (event.clientX - rect.left) / rect.width;
-    const newRate = 0.25 + x * 1.75; // Maps 0-1 to 0.25-2
-    playbackRate.value = Math.max(0.25, Math.min(2, newRate));
-    audio.value.rate(playbackRate.value);
-  };
+  //   const rect = document.body.getBoundingClientRect();
+  //   const x = (event.clientX - rect.left) / rect.width;
+  //   const newRate = 0.25 + x * 1.75; // Maps 0-1 to 0.25-2
+  //   playbackRate.value = Math.max(0.25, Math.min(2, newRate));
+  //   audio.value.rate(playbackRate.value);
+  // };
 
-  const handleTouchStart = (event) => {
-    if (!audio.value || showPlayButton.value) return;
-    touchStartX.value = event.touches[0].clientX;
-  };
+  // const handleTouchStart = (event) => {
+  //   if (!audio.value || showPlayButton.value) return;
+  //   touchStartX.value = event.touches[0].clientX;
+  // };
 
-  const handleTouchMove = (event) => {
-    if (!audio.value || showPlayButton.value || touchStartX.value === null)
-      return;
+  // const handleTouchMove = (event) => {
+  //   if (!audio.value || showPlayButton.value || touchStartX.value === null)
+  //     return;
 
-    const currentX = event.touches[0].clientX;
-    const delta = (currentX - touchStartX.value) / window.innerWidth;
-    const baseRate = playbackRate.value;
-    const newRate = baseRate + delta * 0.05; // Adjust sensitivity as needed
+  //   const currentX = event.touches[0].clientX;
+  //   const delta = (currentX - touchStartX.value) / window.innerWidth;
+  //   const baseRate = playbackRate.value;
+  //   const newRate = baseRate + delta * 0.05; // Adjust sensitivity as needed
 
-    playbackRate.value = Math.max(0.25, Math.min(2, newRate));
+  //   playbackRate.value = Math.max(0.25, Math.min(2, newRate));
 
-    console.log(playbackRate.value);
-    audio.value.rate(playbackRate.value);
-  };
+  //   console.log(playbackRate.value);
+  //   audio.value.rate(playbackRate.value);
+  // };
 
-  const handleTouchEnd = () => {
-    touchStartX.value = null;
-  };
+  // const handleTouchEnd = () => {
+  //   touchStartX.value = null;
+  // };
 
   onMounted(() => {
     fetchTranscription();
@@ -153,13 +153,7 @@
 </script>
 
 <template>
-  <div
-    class="container"
-    @mousemove.passive="handleMouseMove"
-    @touchstart.passive="handleTouchStart"
-    @touchmove.passive="handleTouchMove"
-    @touchend.passive="handleTouchEnd"
-  >
+  <div class="container">
     <transition name="fade" mode="out-in" duration="400" appear>
       <button @click="playAudio" v-if="showPlayButton">
         {{ activeCaption }}
