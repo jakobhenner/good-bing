@@ -3,17 +3,19 @@
   import { Howl } from "howler";
 
   // State variables
-  const transcription = ref([]);
+  const activeBing = ref(1);
   const sentences = ref([]);
   const currentTime = ref(0);
   const currentSentenceIndex = ref(null);
   const audio = ref(null);
   const showPlayButton = ref(true);
+  const playbackRate = ref(1); // Changed to start at normal speed
+  const touchStartX = ref(null);
   let animationFrame = null;
 
   // Load transcription JSON
   const fetchTranscription = async () => {
-    const response = await fetch("/transcription.json");
+    const response = await fetch(`/transcription-${activeBing.value}.json`);
     const words = await response.json();
 
     // Group words into sentences based on punctuation
@@ -54,14 +56,19 @@
   const playAudio = () => {
     if (!audio.value) {
       audio.value = new Howl({
-        src: ["/good-bing.mp3"],
+        src: [`/good-bing-${activeBing.value}.mp3`],
         format: ["mp3"],
         html5: true,
+        rate: playbackRate.value,
         onplay: updateTime,
         onseek: updateTime,
-        onend: () => {
+        onend: async () => {
           showPlayButton.value = true;
           currentSentenceIndex.value = null;
+          activeBing.value = (activeBing.value % 3) + 1;
+          audio.value.unload();
+          audio.value = null;
+          await fetchTranscription();
         },
       });
     }
@@ -71,7 +78,9 @@
 
   // Use requestAnimationFrame for better performance
   const updateTime = () => {
-    currentTime.value = audio.value.seek();
+    if (audio.value) {
+      currentTime.value = audio.value.seek();
+    }
 
     // Find the currently active sentence, but allow gaps to be "inactive"
     const newIndex = sentences.value.findIndex(
@@ -90,23 +99,64 @@
     if (index === currentSentenceIndex.value) return "active";
   };
 
+  const handleMouseMove = (event) => {
+    if (!audio.value || showPlayButton.value) return;
+
+    const rect = document.body.getBoundingClientRect();
+    const x = (event.clientX - rect.left) / rect.width;
+    const newRate = 0.25 + x * 1.75; // Maps 0-1 to 0.25-2
+    playbackRate.value = Math.max(0.25, Math.min(2, newRate));
+    audio.value.rate(playbackRate.value);
+  };
+
+  const handleTouchStart = (event) => {
+    if (!audio.value || showPlayButton.value) return;
+    touchStartX.value = event.touches[0].clientX;
+  };
+
+  const handleTouchMove = (event) => {
+    if (!audio.value || showPlayButton.value || touchStartX.value === null)
+      return;
+
+    const currentX = event.touches[0].clientX;
+    const delta = (currentX - touchStartX.value) / window.innerWidth;
+    const baseRate = playbackRate.value;
+    const newRate = baseRate + delta * 0.05; // Adjust sensitivity as needed
+
+    playbackRate.value = Math.max(0.25, Math.min(2, newRate));
+
+    console.log(playbackRate.value);
+    audio.value.rate(playbackRate.value);
+  };
+
+  const handleTouchEnd = () => {
+    touchStartX.value = null;
+  };
+
+  onMounted(() => {
+    fetchTranscription();
+  });
+
   // Stop animation on unmount
   onUnmounted(() => {
     if (animationFrame) cancelAnimationFrame(animationFrame);
   });
-
-  // Load data on mount
-  onMounted(fetchTranscription);
 </script>
 
 <template>
-  <div class="container">
+  <div
+    class="container"
+    @mousemove.passive="handleMouseMove"
+    @touchstart.passive="handleTouchStart"
+    @touchmove.passive="handleTouchMove"
+    @touchend.passive="handleTouchEnd"
+  >
     <transition name="fade" mode="out-in" duration="400" appear>
       <button @click="playAudio" v-if="showPlayButton">
         Have you been a good Bing?
       </button>
       <div v-else>
-        <div class="lyrics">
+        <div class="lyrics" :key="activeBing">
           <div
             v-for="(sentence, index) in sentences"
             :key="index"
@@ -133,6 +183,10 @@
 </template>
 
 <style>
+  .container {
+    width: 100vw;
+    min-height: 100vh;
+  }
   button {
     background: #fff;
     color: transparent;
