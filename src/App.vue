@@ -147,11 +147,11 @@
     padding: 1rem;
     background-image: linear-gradient(
       90deg,
-      #555 0%,
-      #fff 25%,
-      #fff 50%,
-      #555 75%,
-      #555 100%
+      rgba(0, 0, 0, 0.5) 0%,
+      #000 25%,
+      #000 50%,
+      rgba(0, 0, 0, 0.5) 75%,
+      rgba(0, 0, 0, 0.5) 100%
     );
     background-size: 200% 100%;
     background-clip: text;
@@ -173,7 +173,7 @@
 
   .lyrics {
     overflow: hidden;
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba(0, 0, 0, 0.3);
     transition: color 0.3s ease-in-out;
     display: grid;
     gap: 0.75rem;
@@ -186,7 +186,7 @@
     opacity: 0;
   }
   .sentence.active {
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(0, 0, 0, 0.5);
     opacity: 1;
   }
 
@@ -195,6 +195,6 @@
   }
 
   .highlight {
-    color: white;
+    color: #000;
   }
 </style>
