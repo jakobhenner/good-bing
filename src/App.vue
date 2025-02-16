@@ -232,7 +232,7 @@
   }
 
   .sentence {
-    transition: opacity 0.4s ease-in-out, filter 0.4s ease-in-out;
+    transition: opacity 0.4s ease-in-out;
     opacity: 0;
   }
   .sentence.active {
@@ -241,10 +241,11 @@
   }
 
   .word {
-    transition: color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out, filter 0.2s ease-in-out;
+    filter: grayscale(1);
   }
-
-  .highlight {
+  .word.highlight {
+    filter: grayscale(0);
     color: #000;
   }
 
