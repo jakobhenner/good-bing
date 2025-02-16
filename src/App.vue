@@ -155,9 +155,9 @@
 <template>
   <div class="container">
     <transition name="fade" mode="out-in" duration="400" appear>
-      <button @click="playAudio" v-if="showPlayButton">
-        {{ activeCaption }}
-      </button>
+      <div class="trigger" @click="playAudio" v-if="showPlayButton">
+        <p>{{ activeCaption }}</p>
+      </div>
       <div v-else>
         <div class="lyrics" :key="activeBing">
           <div
@@ -189,23 +189,14 @@
   .container {
     width: 100vw;
     min-height: 100vh;
+    text-wrap: balance;
   }
-  button {
-    background: transparent;
-    appearance: none;
-    color: #000;
-    border: none;
+  .trigger {
     cursor: pointer;
-    font: inherit;
-    letter-spacing: inherit;
     position: absolute;
     top: 0;
     left: 0;
     inset: 0;
-    text-align: left;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
     padding: 1rem;
   }
 
@@ -227,8 +218,13 @@
     transition: color 0.3s ease-in-out;
     display: grid;
     gap: 0.75rem;
-    text-wrap: balance;
     max-width: 22rem;
+  }
+
+  p {
+    max-width: 22rem;
+    padding: 0;
+    margin: 0;
   }
 
   .sentence {
