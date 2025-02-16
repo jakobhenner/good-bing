@@ -101,29 +101,34 @@
 
 <template>
   <div class="container">
-    <button @click="playAudio" v-if="showPlayButton">
-      Have you been a good Bing?
-    </button>
-    <div class="lyrics" v-else>
-      <div
-        v-for="(sentence, index) in sentences"
-        :key="index"
-        class="sentence"
-        :class="getSentenceClass(index)"
-      >
-        <span
-          v-for="(word, i) in sentence.words"
-          :key="i"
-          class="word"
-          :class="{
-            highlight:
-              currentTime >= word.start_time && index === currentSentenceIndex,
-          }"
-        >
-          {{ word.word }}
-        </span>
+    <transition name="fade" mode="out-in" duration="400" appear>
+      <button @click="playAudio" v-if="showPlayButton">
+        Have you been a good Bing?
+      </button>
+      <div v-else>
+        <div class="lyrics">
+          <div
+            v-for="(sentence, index) in sentences"
+            :key="index"
+            class="sentence"
+            :class="getSentenceClass(index)"
+          >
+            <span
+              v-for="(word, i) in sentence.words"
+              :key="i"
+              class="word"
+              :class="{
+                highlight:
+                  currentTime >= word.start_time &&
+                  index === currentSentenceIndex,
+              }"
+            >
+              {{ word.word }}
+            </span>
+          </div>
+        </div>
       </div>
-    </div>
+    </transition>
   </div>
 </template>
 
@@ -196,5 +201,16 @@
 
   .highlight {
     color: #000;
+  }
+
+  /* Fade transition */
+  .fade-enter-active,
+  .fade-leave-active {
+    transition: opacity 0.4s ease-in-out;
+  }
+
+  .fade-enter-from,
+  .fade-leave-to {
+    opacity: 0;
   }
 </style>
