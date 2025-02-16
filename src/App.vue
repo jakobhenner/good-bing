@@ -199,6 +199,7 @@
   button {
     background: transparent;
     appearance: none;
+    color: #000;
     border: none;
     cursor: pointer;
     font: inherit;
