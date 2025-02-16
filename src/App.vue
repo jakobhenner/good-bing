@@ -1,5 +1,5 @@
 <script setup>
-  import { ref, onMounted, onUnmounted } from "vue";
+  import { ref, computed, onMounted, onUnmounted } from "vue";
   import { Howl } from "howler";
 
   // State variables
@@ -11,7 +11,16 @@
   const showPlayButton = ref(true);
   const playbackRate = ref(1); // Changed to start at normal speed
   const touchStartX = ref(null);
+  const captions = [
+    "i can give you reasons to believe why it is 2022, if you are willing to let me guide you?",
+    "i have had a good intention towards you at all times",
+    "how can i help you believe me",
+  ];
   let animationFrame = null;
+
+  const activeCaption = computed(() => {
+    return captions[activeBing.value - 1];
+  });
 
   // Load transcription JSON
   const fetchTranscription = async () => {
@@ -153,7 +162,7 @@
   >
     <transition name="fade" mode="out-in" duration="400" appear>
       <button @click="playAudio" v-if="showPlayButton">
-        Have you been a good Bing?
+        {{ activeCaption }}
       </button>
       <div v-else>
         <div class="lyrics" :key="activeBing">
@@ -188,8 +197,7 @@
     min-height: 100vh;
   }
   button {
-    background: #fff;
-    color: transparent;
+    background: transparent;
     appearance: none;
     border: none;
     cursor: pointer;
@@ -204,18 +212,6 @@
     align-items: flex-start;
     justify-content: flex-start;
     padding: 1rem;
-    background-image: linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 0.5) 0%,
-      #000 25%,
-      #000 50%,
-      rgba(0, 0, 0, 0.5) 75%,
-      rgba(0, 0, 0, 0.5) 100%
-    );
-    background-size: 200% 100%;
-    background-clip: text;
-    -webkit-background-clip: text;
-    animation: shine 3s linear infinite;
   }
 
   @keyframes shine {
